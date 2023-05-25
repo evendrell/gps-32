@@ -19,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.x  # Reemplaza 'x' con la versión de Python que necesites
+          python-version: 3.0
 
       - name: Install dependencies
         run: pip install pylint
