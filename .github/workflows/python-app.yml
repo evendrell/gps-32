@@ -22,7 +22,7 @@ jobs:
           python-version: 3.0
 
       - name: Install dependencies
-        run: pip install pylint coverage
+        run: pip install pylint
 
       - name: Run pylint
         run: pylint --disable=all --enable=unused-import,unused-variable .
@@ -30,6 +30,9 @@ jobs:
       - name: Run tests
         run: python test.py
 
-      - name: Run coverage
-        run: coverage run -m pytest test.py
+      - name: Upload coverage
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage-report
+          path: ./coverage
 
