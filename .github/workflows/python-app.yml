@@ -31,5 +31,5 @@ jobs:
         run: python test.py
 
       - name: Run coverage
-        run: coverage run --source=main.py -m pytest coverage report -m
+        run: coverage run
 
