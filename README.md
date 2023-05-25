@@ -1,5 +1,5 @@
 # gps-32
 
-Sergio Utrero
-Maria Planas
-Esther Vendrell
+- Sergio Utrero
+- Maria Planas
+- Esther Vendrell
